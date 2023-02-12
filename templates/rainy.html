@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../static/style.css">
+  <title>WEATHER APP</title>
+</head>
+
+<body style="color: white;">
+    <img src="../static/rainy.jpg" class="background">
+      <div class="mainsection" id="index">
+        <div class="midlayer">
+          <br><br>
+          <div class="heade1" style="color: white;">WEATHER PREDICTION</div>
+          <div class="lastlayer">
+            <h5 class="heade2" style="color:white;">PREDICT WEATHER OF YOUR CITY</h5>
+            <br>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+        <div class="rowwise">
+        <form action='/predict' method="POST" class="col s12">
+          <div class="row">
+            <div class="first">
+                <label for="first_name"><b>Precipitation</b></label>
+                <br>
+              <input   id="first_name" name='Precipitation'type="text" class="validate">
+            </div>
+            <div class="second">
+    
+              <label for="last_name"><b>Max Temperature</b></label>
+                <br>
+              <input id="second_name"  name="maxtemp" type="text" class="validate">
+    
+            </div>
+    
+            <div class="third">
+                <label for="_name"><b>Min Temperature</b></label>
+                <br>
+              <input id="third_name" name="mintemp" type="text" class="validate">
+    
+            </div>
+
+            <div class="forth">
+                <label for="_name"><b>Wind</b></label>
+                <br>
+              <input id="forth_name" name="Wind" type="text" class="validate">
+            </div>
+    
+          </div>
+    
+          <div class="buttondiv">
+    
+              <button type="submit" class="predictbtn">Predict Weather</button>
+          </div>
+        </form>
+        </div>
+    
+          <br><h4 align="center" style="color: white;">YOUR CITY WEATHER: <b>{{outputpredicted}}</b></h4>
+            <br>
+    
+</body>

@@ -1,0 +1,134 @@
+body{   
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+img.background{
+   
+    position: absolute;
+    
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+.heade1{
+    color: rgb(73, 120, 156);
+    
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: 500;
+    
+}
+
+.heade2{
+    text-align: center;
+    font-size: medium;
+    color: rgb(53, 59, 61);
+    
+    
+}
+
+.first{
+    text-align: center;
+    
+}
+
+.second{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.third{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.forth{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.buttondiv{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.predictbtn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgb(60, 210, 251);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .predictbtn:before {
+    content: "";
+    background: linear-gradient(
+      30deg,
+      #66bde8,
+      #d7cbcb,
+      #82f0ff,
+      #76dbff,
+      #34c9ff,
+      #ffffff,
+      #49cbff,
+      #00d0fa,
+      #a4d0ff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-predictbtn 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-predictbtn {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .predictbtn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(47, 102, 154);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  input{
+    background: #ffffff;
+    padding: 3px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #caf4fe, inset -6px -6px 6px rgb(189, 207, 209);
+  }
